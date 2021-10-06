@@ -1,0 +1,75 @@
+/* CONTAINER */
+.container {
+  width: 420px;
+  height: 420px;
+  position: relative;
+  border: 10px solid #000;
+  z-index: 1;
+}
+
+.smile {
+  position: absolute;
+  border-radius: 100%;
+}
+
+
+/* FACE */
+.face {
+  width: 400px;
+  height: 400px;
+  background: #efc56f;
+  border: 10px solid #000;
+  
+  z-index: 2;
+}
+
+/* EYES */
+
+.left-eye, .right-eye{
+  width: 50px;
+  height: 50px;
+  background: #000;
+  top: 120px;
+  z-index: 3;
+}
+
+.left-eye {
+  right: 110px;
+}
+
+.right-eye {
+  left: 110px;
+}
+
+/* MOUTH */
+
+.mouth-corners-left, .mouth-corners-right{
+  width: 21px;
+  height: 21px;
+  background: #000;
+  bottom: 136px;
+  z-index: 4;
+}
+
+.mouth-corners-left {
+  left: 87px;
+}
+
+.mouth-corners-right {
+  right: 92px;
+}
+
+
+.mouth {
+  width: 180px;
+  height: 180px;
+  border: 20px solid #000;
+
+  /* HALF OF THE CIRCLE */
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(135deg);
+  top: 140px;
+  left: 88px;
+  z-index: 5;
+}
